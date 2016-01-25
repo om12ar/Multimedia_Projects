@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="161.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="predictor.GUIController">
+   <children>
+      <Button fx:id="ChangePath" layoutX="469.0" layoutY="30.0" mnemonicParsing="false" onAction="#changePath" text="Change" />
+      <Label layoutX="24.0" layoutY="34.0" text="Path" />
+      <Button id="compress" layoutX="48.0" layoutY="75.0" mnemonicParsing="false" onAction="#compressButton" text="Compress" />
+      <Button layoutX="444.0" layoutY="75.0" mnemonicParsing="false" onAction="#decompressButton" text="Decompress" />
+      <Label fx:id="Status" layoutX="244.0" layoutY="79.0" prefHeight="17.0" prefWidth="51.0" />
+      <TextField id="pathView" fx:id="pathView" layoutX="77.0" layoutY="30.0" onAction="#changePath" prefHeight="25.0" prefWidth="384.0" />
+      <TextField id="bits" fx:id="bits" layoutX="148.0" layoutY="100.0" prefHeight="25.0" prefWidth="57.0" />
+      <Label layoutX="146.0" layoutY="130.0" text="num of bits" />
+   </children>
+</AnchorPane>
